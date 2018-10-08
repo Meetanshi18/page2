@@ -1,0 +1,170 @@
+/* COLORS
+
+#E2E0DE (Primary light grey)
+#125E8A (Primary blue)
+#1C95DB (Light blue)
+#2B3D41 (Dark Grey)
+#FCFCFC (Whitish)
+#5D737E (Purplish Grey)
+
+*/
+
+* {
+    margin: 0px;
+    padding: 0px;    
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+/*to change the font accourding to the screen size*/
+html {
+    font-size: 62.5%
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items : center; /*vertically center*/
+}
+.header--logo{    
+    flex-grow: 2;
+    font-size: 3rem;
+    font-weight : lighter;
+    height: auto;
+    padding: 2rem;
+    letter-spacing: 0.5rem;
+}
+.header--generatePass, .header--viewPass, .header--addPass{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding : 2rem;
+    
+}
+.header--generatePass:hover, .header--viewPass:hover, .header--addPass:hover{
+    background: #125E8A;
+    color : white;
+}
+/* main */
+
+.main--generatePass{
+    background : #E2E0DE;
+}
+.main--generatePass--heading{
+    font-size: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding : 1rem;
+}
+.main--generatePass--content{
+    display : flex;
+    flex-flow : row; 
+    padding: 2rem; 
+      
+}
+.main--generatePass--content--left{
+    position: relative;
+}
+.main--generatePass--content--left:after{
+    content:"";
+    position: absolute;
+    border-right: 2px solid #2B3D41;
+    height: 100%;
+    transform: translateY(-100%);
+    right : -5%;
+}
+.main--generatePass--content--left label{
+    font-size : 1.5rem;
+    display: flex;
+    justify-content: flex-start;
+    margin-top : 1rem;
+    
+}
+
+.main--generatePass--content--right{
+    flex-grow : 2;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    margin : 3rem;  
+    font-size: 1.75rem;  
+    
+}
+
+.main--generatePass--content--right input,label{
+    display: flex;
+    justify-content: center;
+}
+#createPassBtn{
+    font-size : 1.75rem;
+    margin-top : 1rem;
+
+    background:#FCFCFC;
+    
+}
+.main--viewPass{
+    padding : 0.5rem;
+}
+.main--viewPass--heading{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    
+    padding: 3rem;
+}
+.main--viewPass--heading span{
+    position: relative;
+}
+.main--viewPass--heading span:before{
+    content : "";
+    position: absolute;
+    width : 100%;
+    border-top : 1px solid black;
+    border-bottom : 1px solid black;
+    height: 10%;
+    left: -110%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.main--viewPass--heading span:after{
+    content : "";
+    position: absolute;
+    width : 100%;
+    border-top : 1px solid black;
+    border-bottom : 1px solid black;
+    height: 10%;
+    right: -110%;
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.main--viewPass{
+    background :#1C95DB;
+    margin-top : 2rem;
+    
+}
+.main--viewPass--findPass{
+    background : #FCFCFC;
+    margin-right : 10rem;
+    margin-left : 10rem;
+}
+
+.main--viewPass--findPass{
+    display: flex;
+    justify-content: center;
+    padding : 2rem;
+    font-size: 1.75rem;
+}
+#password--findBtn{
+    margin-right : 10rem;
+    margin-left : 10rem;
+}
+.main--viewPass--list{
+    padding : 2rem;
+    background : #1C95DB;
+    font-size : 1.5rem;
+    
+}
